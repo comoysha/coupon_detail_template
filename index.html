@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>领取专属优惠券</title>
+    <meta name="description" content="满300减50，限时领取，点击查看优惠券详情。" />
+    <meta property="og:title" content="领取专属优惠券" />
+    <meta property="og:description" content="满300减50，限时领取，点击查看优惠券详情。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://comoysha.github.io/coupon_detail_template/" />
+    <meta
+      property="og:image"
+      content="https://comoysha.github.io/coupon_detail_template/coupon.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="领取专属优惠券" />
+    <meta name="twitter:description" content="满300减50，限时领取，点击查看优惠券详情。" />
+    <meta
+      name="twitter:image"
+      content="https://comoysha.github.io/coupon_detail_template/coupon.jpeg"
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="coupon-page">
+      <section class="hero" aria-labelledby="coupon-title">
+        <div class="hero__icon" aria-hidden="true">
+          <svg viewBox="0 0 120 96" role="img" focusable="false">
+            <path
+              d="M12 18a10 10 0 0 1 10-10h76a10 10 0 0 1 10 10v14.8a10 10 0 0 0 0 30.4V78a10 10 0 0 1-10 10H22A10 10 0 0 1 12 78V63.2a10 10 0 0 0 0-30.4V18Zm28 8v14h16V26H40Zm24 0v14h16V26H64ZM40 44v14h16V44H40Zm24 0v14h16V44H64Zm-24 18v14h16V62H40Zm24 0v14h16V62H64Z"
+            />
+          </svg>
+        </div>
+        <h1 id="coupon-title" class="hero__title">{公司名}赠送给您的优惠券:</h1>
+        <p class="hero__key">coupon_gifted_to_you<br />（超长自动换行）</p>
+      </section>
+
+      <section class="coupon-list" aria-label="优惠券列表">
+        <article class="coupon-card">
+          <div class="coupon-card__amount">
+            <div class="amount-display"><span class="currency">€</span><span class="value">10</span></div>
+            <p class="amount-limit">满500可用</p>
+          </div>
+          <div class="coupon-card__content">
+            <h2 class="coupon-name">{券名}</h2>
+            <p class="coupon-meta">限2020-05-29至2020-06-11使用</p>
+            <p class="coupon-meta">2020-04-01领取</p>
+            <span class="coupon-tag coupon-tag--outlined">可叠加</span>
+          </div>
+        </article>
+
+        <article class="coupon-card coupon-card--dimmed">
+          <div class="coupon-card__amount">
+            <div class="amount-display"><span class="currency">€</span><span class="value">10</span></div>
+            <p class="amount-limit">满500可用</p>
+            <span class="coupon-tag coupon-tag--solid">已使用</span>
+          </div>
+          <div class="coupon-card__content">
+            <h2 class="coupon-name">{券名}</h2>
+            <p class="coupon-meta">限2020-05-29至2020-06-11使用</p>
+            <p class="coupon-meta">2020-04-01领取</p>
+            <span class="coupon-tag coupon-tag--outlined">可叠加</span>
+          </div>
+          <p class="coupon-status-key">used_status</p>
+        </article>
+
+        <article class="coupon-card coupon-card--dimmed">
+          <div class="coupon-card__amount">
+            <div class="amount-display"><span class="currency">€</span><span class="value">10</span></div>
+            <p class="amount-limit">满500可用</p>
+            <span class="coupon-tag coupon-tag--solid">已使用</span>
+          </div>
+          <div class="coupon-card__content">
+            <h2 class="coupon-name">{券名}</h2>
+            <p class="coupon-meta">限2020-05-29至2020-06-11使用</p>
+            <p class="coupon-meta">2020-04-01领取</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
